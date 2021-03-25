@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SpaceX View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SpaceXViewController" customModule="SpaceXLatestLaunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2e-CB-nNZ">
+                                <rect key="frame" x="20" y="69" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Og-DU-2D5">
+                                <rect key="frame" x="82" y="89" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9ei-NR-HDz"/>
+                                    <constraint firstAttribute="height" constant="250" id="BM5-IJ-J7O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-5v-Pbt">
+                                <rect key="frame" x="20" y="369" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2e-CB-nNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2lw-rS-kqD"/>
+                            <constraint firstItem="z1a-5v-Pbt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXf-ln-Fhb"/>
+                            <constraint firstItem="z1a-5v-Pbt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="D9f-uE-F1c"/>
+                            <constraint firstItem="a2e-CB-nNZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="FS7-S5-ynN"/>
+                            <constraint firstItem="z1a-5v-Pbt" firstAttribute="top" secondItem="3Og-DU-2D5" secondAttribute="bottom" constant="30" id="Fue-eZ-GaN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Og-DU-2D5" secondAttribute="trailing" constant="82" id="Mac-93-07L"/>
+                            <constraint firstAttribute="trailing" secondItem="a2e-CB-nNZ" secondAttribute="trailing" constant="20" id="dBL-JW-aTC"/>
+                            <constraint firstAttribute="trailing" secondItem="z1a-5v-Pbt" secondAttribute="trailing" constant="20" id="iwt-TH-gra"/>
+                            <constraint firstItem="3Og-DU-2D5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="m1Y-2Z-pou"/>
+                            <constraint firstItem="3Og-DU-2D5" firstAttribute="top" secondItem="a2e-CB-nNZ" secondAttribute="bottom" constant="20" id="mUv-2n-ld6"/>
+                            <constraint firstItem="a2e-CB-nNZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="rSK-Nh-Y9d"/>
+                            <constraint firstItem="3Og-DU-2D5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgJ-Dg-r6S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="z1a-5v-Pbt" id="Ocw-Pz-bLE"/>
+                        <outlet property="imageView" destination="3Og-DU-2D5" id="sa1-8V-0l2"/>
+                        <outlet property="titleLabel" destination="a2e-CB-nNZ" id="ds3-jN-XPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
